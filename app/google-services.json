@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "652067740812",
+    "project_id": "medalert-173508"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652067740812:android:259f191c77d4da0f",
+        "android_client_info": {
+          "package_name": "com.mukul.panorbit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652067740812-96cppmha50uarc415roa2kfjfno7adql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mukul.panorbit",
+            "certificate_hash": "b0e80dbb2cbedb036c2efc73bb66e41e969293b1"
+          }
+        },
+        {
+          "client_id": "652067740812-705nonn6fn520n5cupuliv71kg35dcac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuqE5mFRkigaFov1B3SFTM9gqfbomkXwg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mukul.panorbit">
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"></uses-permission-sdk-23>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="panorbit.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.androidnames.data.DatabasePanorbit" />
+
+        <service
+            android:name=".services.MyAlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".MyReceiver" />
+
+        <activity
+            android:name=".NewMedicine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Intro"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>
